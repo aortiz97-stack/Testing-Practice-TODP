@@ -17,5 +17,5 @@ test('Calculator has a multiply operation', () => {
 });
 
 test('Calculator has a division operation', () => {
-    expect(typeof calculator.divide).toBe('function');
-  });
+  expect(typeof calculator.divide).toBe('function');
+});
