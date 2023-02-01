@@ -19,3 +19,7 @@ test('Calculator has a multiply operation', () => {
 test('Calculator has a division operation', () => {
   expect(typeof calculator.divide).toBe('function');
 });
+
+test('Add operation returns the sum of two numbers', () => {
+  expect(calculator.add(2, 3)).toBe(5);
+});
