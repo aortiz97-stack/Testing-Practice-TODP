@@ -1,7 +1,7 @@
 const capitalize = require('./capitalize');
 
 test('Capitalize function returns a string', () => {
-  expect(capitalize('string')).toBe('string');
+  expect(typeof capitalize('string')).toBe('string');
 });
 
 test('Function does not capitalize first letter if it is already capitalized', () => {
