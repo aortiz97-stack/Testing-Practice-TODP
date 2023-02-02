@@ -13,3 +13,8 @@ test('Caesar cipher shifts letters by shift factor correctly', () => {
   expect(caesarCipher('abcd')).toBe('bcde');
   expect(caesarCipher('abcd', 5)).toBe('fghi');
 });
+
+test('Caesar cipher shifts letters and wraps around with positive shift factor', () => {
+  expect(caesarCipher('wxyz')).toBe('xyza');
+  expect(caesarCipher('wxyz', 5)).toBe('bcde');
+})
