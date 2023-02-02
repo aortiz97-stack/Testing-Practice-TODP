@@ -27,3 +27,8 @@ test('cipher retains the case of characters', () => {
 test('cipher can process words with spaces and punctuation', () => {
   expect(caesarCipher("London's bridge has fallen!")).toBe("Mpoepo't csjehf ibt gbmmfo!");
 });
+
+test('cipher works with negative shift numbers', () => {
+  expect(caesarCipher('abcd', -1)).toBe('zabc');
+  expect(caesarCipher('yzab', -5)).toBe('tuvw');
+});
