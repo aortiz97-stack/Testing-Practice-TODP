@@ -9,9 +9,13 @@ function caesarCipher(string, shiftFactor = 1) {
       alphabet = upperAlphabet;
     }
     let alphabetIdx = alphabet.indexOf(char);
-    alphabetIdx += shiftFactor;
-    alphabetIdx %= 26;
-    encryptedStr += alphabet.charAt(alphabetIdx);
+    if (alphabetIdx !== -1) {
+      alphabetIdx += shiftFactor;
+      alphabetIdx %= 26;
+      encryptedStr += alphabet.charAt(alphabetIdx);
+    } else {
+      encryptedStr += char;
+    }
   }
   return encryptedStr;
 }
