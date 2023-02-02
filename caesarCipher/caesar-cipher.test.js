@@ -24,6 +24,6 @@ test('cipher retains the case of characters', () => {
   expect(caesarCipher('McKinney')).toBe('NdLjoofz');
 });
 
-/*test('cipher can process words with spaces and punctuation', () => {
-  expect(caesarCipher("London's bridge has fallen!"))
-})*/
+test('cipher can process words with spaces and punctuation', () => {
+  expect(caesarCipher("London's bridge has fallen!")).toBe("Mpoepo't csjehf ibt gbmmfo!");
+});
