@@ -5,7 +5,7 @@ function caesarCipher(string, shiftFactor = 1) {
     const char = string.charAt(i);
     let alphabetIdx = alphabet.indexOf(char);
     alphabetIdx += shiftFactor;
-    alphabetIdx %= shiftFactor;
+    alphabetIdx %= 26;
     encryptedStr += alphabet.charAt(alphabetIdx);
   }
   return encryptedStr;
