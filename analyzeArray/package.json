@@ -1,0 +1,12 @@
+{
+  "name": "analyzearray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "analyze-array.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
