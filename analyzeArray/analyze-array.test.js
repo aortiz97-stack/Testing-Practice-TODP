@@ -15,3 +15,7 @@ test('analyzeArray returns an object with attributes it should have', () => {
   expect(typeof analyzeArray([1, 8, 3, 4, 2, 6]).max).toBe('function');
   expect(typeof analyzeArray([1, 8, 3, 4, 2, 6]).length).toBe('function');
 });
+
+test('analyzeArray returns an object.average returns average of array contents', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).average).toBe(4);
+});
