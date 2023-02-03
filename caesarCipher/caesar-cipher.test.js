@@ -40,3 +40,8 @@ test('cipher shifts letters and wraps around with negative shift factor', () => 
 test('cipher shifts letters and wraps around with -1 shift factor', () => {
   expect(caesarCipher('abcd', -1)).toBe('zabc');
 });
+
+test('cipher retains the case of characters with negative shift', () => {
+  expect(caesarCipher('London', -5)).toBe('Gjiyji');
+  expect(caesarCipher('McKinney', -1)).toBe('LbJhmmdx');
+});
