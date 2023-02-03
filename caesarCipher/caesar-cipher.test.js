@@ -37,6 +37,6 @@ test('cipher shifts letters and wraps around with negative shift factor', () => 
   expect(caesarCipher('abcd', -5)).toBe('vwxy');
 });
 
-/*test('cipher shifts letters and wraps around with -1 shift factor', () => {
+test('cipher shifts letters and wraps around with -1 shift factor', () => {
   expect(caesarCipher('abcd', -1)).toBe('zabc');
-});*/
+});
