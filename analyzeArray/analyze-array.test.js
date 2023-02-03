@@ -17,5 +17,5 @@ test('analyzeArray returns an object with attributes it should have', () => {
 });
 
 test('analyzeArray returns an object.average returns average of array contents', () => {
-  expect(analyzeArray([1, 8, 3, 4, 2, 6]).average).toBe(4);
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).average()).toBe(4);
 });
