@@ -45,3 +45,7 @@ test('cipher retains the case of characters with negative shift', () => {
   expect(caesarCipher('London', -5)).toBe('Gjiyji');
   expect(caesarCipher('McKinney', -1)).toBe('LbJhmmdx');
 });
+
+test('cipher can process words with spaces and punctuation', () => {
+  expect(caesarCipher("London's bridge has fallen!", -1)).toBe("Knmcnm'r aqhcfd gzr ezkkdm!");
+});
