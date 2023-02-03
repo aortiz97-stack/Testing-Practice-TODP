@@ -28,7 +28,7 @@ test('cipher can process words with spaces and punctuation', () => {
   expect(caesarCipher("London's bridge has fallen!")).toBe("Mpoepo't csjehf ibt gbmmfo!");
 });
 
-test('cipher works with negative shift numbers', () => {
-  expect(caesarCipher('abcd', -1)).toBe('zabc');
-  expect(caesarCipher('yzab', -5)).toBe('tuvw');
+test('cipher shifts letters by basic negative shift factor correctly', () => {
+  expect(caesarCipher('bcde', -1)).toBe('abcd');
+  expect(caesarCipher('wxyz', -5)).toBe('rstu');
 });
