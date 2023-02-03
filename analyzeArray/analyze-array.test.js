@@ -19,3 +19,15 @@ test('analyzeArray returns an object with attributes it should have', () => {
 test('analyzeArray returns an object.average returns average of array contents', () => {
   expect(analyzeArray([1, 8, 3, 4, 2, 6]).average()).toBe(4);
 });
+
+test('analyzeArray returns an object.average returns average of array contents', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).min()).toBe(1);
+});
+
+test('analyzeArray returns an object.average returns average of array contents', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).max()).toBe(8);
+});
+
+test('analyzeArray returns an object.average returns average of array contents', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6]).length()).toBe(6);
+});
